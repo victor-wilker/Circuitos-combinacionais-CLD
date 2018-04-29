@@ -1,0 +1,22 @@
+%instruções 
+%Linhas iniciando com % são linhas de comentários. 
+%A primeira linha não comentário contém o número de entradas externas e o número de portas lógicas do circuito.
+%as linhas sao separadas por espaço nao podendo ser mudada, deve-se seguir um padrao de leitura ex: A B ... E, e para saidas sempre a maior vem primeiro ex S3 S2
+% a segunda linha é onde trava as portas ou entradas,primeiramente voce deve colocar sem essa linha e em seguida colocar travando.
+%para travar coloca-se Ap 0 significa entrada A travada em 0.
+%se desejar travar apenas uma entrada/portta nos outros 2 argumentos deve-se colocar Z para o programa ignorar a leitura
+%Obs:jamais deixe um espaço que esteja preenchido vazio isso ocaisonará erro no programa
+%as tabelas ira sobrescrever então salve-as em um novo doc. 
+%é possivel travar apenas 2 portas ou entradas por vez que o code é compilado 
+%F é a saida final do circuto
+5  4 
+
+z z z z 
+
+S1 NAND A B
+S2 OR B C
+S3 OR S2 S1
+S4 NAND S3 B
+
+F S4
+
