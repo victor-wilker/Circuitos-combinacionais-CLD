@@ -9,14 +9,14 @@
 %as tabelas ira sobrescrever então salve-as em um novo doc. 
 %é possivel travar apenas 2 portas ou entradas por vez que o code é compilado 
 %F é a saida final do circuto
-5  4 
+4  4
 
-z z z z 
+z z z z  
 
-S1 NAND A B
-S2 OR B C
-S3 OR S2 S1
-S4 NAND S3 B
-
+S1 NAND B C
+S2 NAND S1 A
+S3 NAND C D
+S4 NAND S3 S2
 F S4
+
 

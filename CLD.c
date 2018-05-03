@@ -1,3 +1,9 @@
+/*
+	Nome:Victor Wilker
+	Circuitos Combinacionais
+	29/04/2018
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -2911,12 +2917,7 @@ int main(){
 
 				fscanf(file,"%s %s  ", saidas1, port_ent);
 	      		printf("%s %s \n", saidas1, port_ent);
-	      		if (strcmp(fixa1, "z")!=0)
-	      			{
-	      				fprintf(file, "\n\tobs: tabela com portas travadas\n");
-	      			}else{
-	      				fprintf(file, "\n\tobs: tabela com portas sem nenhum travamento\n");
-	      			}
+	      	
 				//impressão da tabela verdade
 	      		if (strcmp(port_ent, "S4")==0 )
 				{
