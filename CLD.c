@@ -3,14 +3,12 @@
 	Circuitos Combinacionais
 	29/04/2018
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
 #include <stdbool.h>
 //porta E
-
 int and(int A,int B){
 	int saida;
 	if (A & B)
@@ -69,14 +67,14 @@ int xor(int A,int B){
 }
 // // porta ou exclusivo negada
 int xnor(int A,int B){
-	int saida;
+	int x;
 	if (A ^ B)
 	{
-		saida=0;
+		x=0;
 	}else{
-		saida=1;
+		x=1;
 	}	
-	return saida;
+	return x;
 }
 int not(int A){
 	int saida;
@@ -89,8 +87,6 @@ int not(int A){
 
 	return saida;
 }
-
-
 
 // função main//////////////////////////////////////////////////////////////////
 int main(){
